@@ -1,0 +1,113 @@
+.footer {
+  position: relative;
+  background-image: url('../img/background-footer.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 56px 0;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
+
+  &::after {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      background-image: url(../img/medicaments.png);
+      content: '';
+      background-repeat: no-repeat;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 250px;
+      height: 150px;
+    }
+  }
+  
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    max-width: 1240px;
+    box-sizing: content-box;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 42px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
+
+  &__link {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition-property: color;
+    transition-duration: 0.2s;
+  }
+
+  &__menu {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  &__menu li:last-child a.links-footer {
+    margin-bottom: 0;
+  }
+
+  & a:hover {
+    color: var(--color-primary-blue);
+  }
+
+  & img:hover {
+    opacity: 0.8;
+    color: var(--color-primary-blue);
+  }
+
+  &__logo {
+    flex-grow: 1;
+    color: var(--color-primary-blue);
+    line-height: 0.9;
+    text-decoration: none;
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  &__logo a {
+    color: var(--color-primary-blue);
+    text-decoration: none;
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  &__logo span {
+    display: block;
+  }
+}

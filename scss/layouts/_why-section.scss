@@ -1,0 +1,47 @@
+.why-section {
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 48px;
+  }
+
+  &__title {
+    color: var(--color-primary-dark);
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 48px;
+      font-family: 'Play';
+      font-weight: 700;
+      font-size: 64px;
+    }
+  }
+
+  &__title span {
+    display: block;
+  }
+
+  &__title .accent {
+    color: var(--color-primary-blue);
+  }
+}
+
+.background-wave {
+  background-image: url(../img/background-vawe.svg);
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-size: cover;
+  padding-top: 104px;
+  @media screen and (min-width: 768px) {
+    background-size: 200% 1440px;
+    background-position: center top;
+    padding-top: 104px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-size: 100% 1440px;
+    padding-top: 176px;
+  }
+}

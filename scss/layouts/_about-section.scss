@@ -1,0 +1,160 @@
+.about-section {
+  position: relative;
+  // padding-bottom: 176px;
+
+  &__container {
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 28px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 709px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: var(--color-primary-dark);
+    font-family: 'Roboto';
+    max-width: 264px;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    @media screen and (min-width: 768px) {
+      font-family: 'Play';
+      max-width: 529px;
+      font-weight: 700;
+      font-size: 64px;
+      margin: 0;
+      margin-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+
+  &__title::after {
+    display: none;
+    @media screen and (min-width: 1280px) {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/Star-medium.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 35px;
+      right: -715px;
+      animation-name: spin;
+      animation-duration: 10s;
+    }
+  }
+
+  &__subtitle {
+    min-width: 320px;
+    margin: 0;
+    padding-left: 0;
+    @media screen and (min-width: 768px) {
+      min-width: 709px;
+      line-height: 1.7;
+      color: var(--color-primary-dark);
+      font-size: 22px;
+    }
+  }
+
+  &__subtitle span {
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__proposition {
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__garant {
+    margin: 0;
+  }
+
+  &__comparisons {
+    @media screen and (min-width: 1280px) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      height: 695px;
+      width: 499px;
+    }
+  }
+
+  &__comparisons::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 360px;
+    right: 60px;
+    animation-name: spin;
+    animation-duration: 10s;
+    @media screen and (min-width: 768px) {
+      width: 64px;
+      height: 64px;
+       top: 500px;
+    right:130px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 64px;
+      height: 64px;
+       top: 350px;
+    left: 130px;
+    }
+  }
+
+  &__comparisons::before {
+    display: none;
+    @media screen and (min-width: 1280px) {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/Star-small.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 270px;
+      left: 470px;
+      animation-name: spin;
+      animation-duration: 10s;
+    }
+  }
+
+  &__comparisons img:first-child {
+    align-self: flex-start;
+  }
+
+  &__comparisons img:last-child {
+    align-self: flex-end;
+  }
+
+  &__img {
+    display: none;
+    @media screen and (min-width: 1280px) {
+      display: block;
+      width: 327px;
+      height: 327px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.main-section {
+  background-image: url('../img/background-main@2x.jpg');
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  background-size: cover;
+  padding-bottom: 56px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 126px;
+    background-image: url('../img/background-main.jpg');
+    background-position: center bottom;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../img/background-main@2x.jpg');
+  }
+
+  &__container {
+    max-width: 1240px;
+    padding-top: 70px;
+    @media screen and (min-width: 768px) {
+      padding-top: 126px;
+      padding-left: 106px;
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-primary-dark);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      color: var(--color-primary-dark);
+      font-size: 18px;
+      text-align: start;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    color: var(--color-primary-blue);
+    width: 330px;
+    height: 46px;
+    line-height: 0.8;
+    text-transform: capitalize;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 529px;
+      height: 228px;
+      font-size: 140px;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 238px;
+    height: 36px;
+    color: var(--color-secondary-dark-gray);
+    font-size: 11px;
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    display: flex;
+    margin: 0 auto;
+    color: var(--color-primary-white);
+    background: var(--color-primary-blue);
+    border-color: var(--color-primary-blue);
+    border-radius: 32px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    transition-property: background-color color;
+    transition-duration: 0.2s;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      padding: 16px 32px;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+
+    &:hover {
+      color: var(--color-primary-dark);
+      background-color: transparent;
+    }
+  }
+}

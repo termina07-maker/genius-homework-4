@@ -1,0 +1,40 @@
+.procedures-section {
+  &__procedures {
+    color: var(--color-primary-dark);
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 48px;
+      font-family: 'Play';
+      font-weight: 700;
+      font-size: 64px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

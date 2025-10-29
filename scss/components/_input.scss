@@ -1,0 +1,32 @@
+.input {
+
+&__label {
+  display: block;
+  
+}
+
+&__control {
+  color: #ffffff;
+  padding: 18px 32.85px;
+  width: 100%;
+  max-width: 310px;
+  max-height: 52px;
+  font-size: 13px;
+  line-height: 1.15;
+  border: 2px solid var(--color-secondary-gray);
+  border-radius: 32px;
+  background-color: transparent;
+}
+
+&__control:focus {
+  color: var(--color-primary-white);
+  background-color: var(--color-secondary-gray);
+  outline: none;
+}
+
+&__control::placeholder {
+  color: var(--color-primary-white);
+  font-size: 13px;
+  line-height: 1.15;
+}
+}
