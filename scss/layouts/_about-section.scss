@@ -1,11 +1,16 @@
 .about-section {
   position: relative;
-  // padding-bottom: 176px;
+  padding-bottom: 104px;
+@media screen and (min-width: 1280px) {
+padding-bottom: 176px;
+}
+  
 
   &__container {
     @media screen and (min-width: 1280px) {
       display: flex;
       gap: 28px;
+      
     }
   }
 
